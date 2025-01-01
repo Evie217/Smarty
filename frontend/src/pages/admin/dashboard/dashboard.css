@@ -1,0 +1,9 @@
+.dashboard-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.homeWidgets {
+    display: flex;
+    margin: 20px;
+}

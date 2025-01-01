@@ -1,0 +1,33 @@
+.facilityContainerTop {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.facilityTitle {
+    font-size: 28px;
+    font-weight: 300;
+    color: #011B2F;
+}
+
+.facilityAddButton {
+    width: 80px;
+    height: 25px;
+    border: none;
+    background-color: #003f66;
+    color: aliceblue;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.facilityReadButton {
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #58A3BC;
+    color: aliceblue;
+    cursor: pointer;
+    margin-right: 10px;
+}
