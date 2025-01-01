@@ -54,7 +54,8 @@ public class AdminStatusController {
         return adminStatusService.getNewUser(date);
     }
 
-    // muam e 77ㅓ
+
+    // 아래 코드는 팀원이 작성한 코드입니다.
     @GetMapping("/permission")
     public List<PermissionDTO> getPermission() {
         List<PermissionDTO> dto = adminStatusService.getPermission();

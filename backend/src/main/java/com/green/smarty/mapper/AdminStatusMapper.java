@@ -18,6 +18,8 @@ public interface AdminStatusMapper {
     List<AdminEnrollmentDTO> getEnrollment(Map<String, Object> condition);
     List<AdminAttendanceDTO> getAttendance(Map<String, Object> condition);
     List<UserVO> getNewUser(Map<String, LocalDate> condition);
+
+    // 아래 코드는 팀원이 작성한 코드입니다.
     List<PermissionDTO> getPermission();
     void enrollment_update(String enrollment_id);
     List<WidgetDTO> getPaymentData(Map<String,String> dateData);

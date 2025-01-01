@@ -38,7 +38,8 @@ public class AdminStatusService {
         condition.put("facility_id", facility_id);
         condition.put("date", date);
         List<AdminReservationDTO> reservationList = adminStatusMapper.getReservation(condition);
-        List<AdminEnrollmentDTO> enrollmentList = adminStatusMapper.getEnrollment(condition);
+        List<AdminEnrollmentDTO> enrollmentList = adminStatusMapper.
+                getEnrollment(condition);
         System.out.println("예약 : " + reservationList);
         System.out.println("수강 : " + enrollmentList);
 
@@ -78,7 +79,8 @@ public class AdminStatusService {
         return userList;
     }
 
-    // muam i 77ㅓ
+
+    // 아래 코드는 팀원이 작성한 코드입니다.
     public List<PermissionDTO> getPermission() {
         List<PermissionDTO> dto = adminStatusMapper.getPermission();
         return dto;

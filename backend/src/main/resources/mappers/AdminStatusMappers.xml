@@ -37,6 +37,8 @@
         where DATE(join_date) BETWEEN #{start} AND #{date}
         order by join_date desc;
     </select>
+
+    // 아래 코드는 팀원이 작성한 코드입니다.
     <select id="getPermission" resultType = "com.green.smarty.dto.PermissionDTO">
         select e.enrollment_id, u.user_id, u.user_name, c.class_name, c.start_date, c.end_date, p.amount, e.enrollment_status from enrollment e join class c on e.class_id = c.class_id join user u on u.user_id = e.user_id join payment p on p.enrollment_id = e.enrollment_id
     </select>
